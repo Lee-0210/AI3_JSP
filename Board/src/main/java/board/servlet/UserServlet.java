@@ -57,7 +57,7 @@ public class UserServlet extends HttpServlet {
 			System.out.println("회원가입 요청 처리...");
 			String username = request.getParameter("username");
 			String password = request.getParameter("password");
-			String passwordConfirm = request.getParameter("password_confirm");
+//			String passwordConfirm = request.getParameter("password_confirm");
 			String name = request.getParameter("name");
 			String email = request.getParameter("email");
 			Users user = Users.builder()

@@ -35,7 +35,7 @@
 				</div>
 	
 				<div class="d-grid gap-2 mt-4">
-					<a href="<%= root %>/board/update" class="btn btn-primary">수정</a>
+					<a href="<%= root %>/board/update.jsp?id=${board.id}" class="btn btn-primary">수정</a>
 					<a href="<%= root %>/board/list" class="btn btn-secondary">목록</a>
 				</div>
 			</form>
