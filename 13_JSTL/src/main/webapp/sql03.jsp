@@ -8,6 +8,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+<<<<<<< HEAD
 	<title>JSTL - SQL</title>
 </head>
 <body>	
@@ -21,3 +22,27 @@
 	</form>
 </body>
 </html>
+=======
+	<title>JSTL - sql</title>
+</head>
+<body>
+	<h1>게시글 수정</h1>
+	<form action="sql03_pro.jsp" method="post">
+		<div>번호 : <input type="text" name="no" /></div>		
+		<div>제목 : <input type="text" name="title" /></div>		
+		<div>작성자 : <input type="text" name="writer" /></div>		
+		<div>내용 : <input type="text" name="content" /></div>		
+		<div><input type="submit" value="수정" /></div>		
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+>>>>>>> branch 'main' of https://github.com/Lee-0210/AI3_JSP.git

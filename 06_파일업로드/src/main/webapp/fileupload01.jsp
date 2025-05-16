@@ -8,11 +8,11 @@
 </head>
 <body>
 	<!-- 서블릿으로 요청 -->
-	<%-- <form action="<%=request.getContextPath()%>/upload" method="post"
-		  enctype="multipart/form-data"> --%>
-	<!-- JSP로 요청 -->
-	<form action="<%=request.getContextPath()%>/fileupload01_pro.jsp" method="post"
+	<form action="<%=request.getContextPath()%>/upload" method="post"
 		  enctype="multipart/form-data">
+	<!-- JSP로 요청 -->
+<%-- 	<form action="<%=request.getContextPath()%>/fileupload01_pro.jsp" method="post" --%>
+<!-- 		  enctype="multipart/form-data"> -->
 		<div>
 			이름 : <input type="text" name="name">
 		</div>

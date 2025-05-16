@@ -8,6 +8,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+<<<<<<< HEAD
 	<title>JSTL - SQL</title>
 </head>
 <body>
@@ -39,3 +40,48 @@
 	</table>
 </body>
 </html>
+=======
+	<title>JSTL - sql</title>
+</head>
+<body>
+	<h1>게시글 목록</h1>
+	<!-- 데이터 소스 -->
+	<sql:setDataSource var="dataSource" 
+		url="jdbc:mysql://localhost:3306/aloha?serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&useSSL=false"
+		driver="com.mysql.cj.jdbc.Driver"
+		user="aloha"
+		password="123456"
+	/>
+	
+	<%-- <sql:query var="결과객체" dataSource="${ dataSource }"></sql:query>  --%>
+	<sql:query var="list" dataSource="${dataSource}">
+		SELECT * FROM board
+	</sql:query>
+	
+	<table border="1">
+		<tr>
+			<c:forEach var="col" items="${ list.columnNames }">
+				<th><c:out value="${col}" /></th>
+			</c:forEach>
+		</tr>
+		<c:forEach var="row" items="${ list.rowsByIndex }">
+			<tr>
+				<c:forEach var="col" items="${row}" varStatus="i">
+					<td><c:out value="${col}"/>
+				</c:forEach>
+			</tr>
+		</c:forEach>
+	
+	</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+>>>>>>> branch 'main' of https://github.com/Lee-0210/AI3_JSP.git
